@@ -34,4 +34,4 @@ def starts(message):
 			else:
 				bot.send_message(message.chat.id,"اهلا بك في يوت الاتصال المتكرر ارسل رقم الهاتف مع رقم الدولة بدون + . \n welcome in bot spam call send number without + just number and code of country \n مثال | Ex.  : 964771*****  ")
 		
-bot.polling()
+bot.infinity_polling()
