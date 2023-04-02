@@ -26,7 +26,7 @@ def starts(message):
 				x = requests.get(url).json()
 				res = x['result']
 				if res =="sent":
-					bot.send_message(message.chat.id,text =f"تم الاتصال تابعنا هنا  \n @Professional_school")
+					bot.send_message(message.chat.id,text =f"تم الاتصال تابعنا هنا @Professional_school")
 				elif res =="Phone number limit reached":
 					bot.send_messagw(message.chat.id,text =f" كثير من المحاولات جرب غير رقم. \n @Professional_school")
 				elif res =="not sent":
@@ -34,4 +34,4 @@ def starts(message):
 			else:
 				bot.send_message(message.chat.id,"اهلا بك في يوت الاتصال المتكرر ارسل رقم الهاتف مع رقم الدولة بدون + . \n welcome in bot spam call send number without + just number and code of country \n مثال | Ex.  : 964771*****  ")
 		
-bot.infinity_polling()
+bot.polling()
