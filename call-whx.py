@@ -1,5 +1,4 @@
-import os
-os.system("pip install pyTelegramBotAPI")
+
 import telebot
 token = "5697360861:AAHaKeaVQNl1-Bt0z66LyfU2czSUbBuW5BE"
 bot = telebot.TeleBot(token)
